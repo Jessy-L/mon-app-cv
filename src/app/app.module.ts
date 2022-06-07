@@ -14,13 +14,16 @@ import { MatIconModule } from '@angular/material/icon';
 // FONT-AWESOME
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule } from '@angular/router';
+import { SiteOutilsComponent } from './site-outils/site-outils.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    SiteOutilsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +35,15 @@ import { NavbarComponent } from './navbar/navbar.component';
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
+
+    // ROUTE NAVIGATION
+    RouterModule.forRoot([
+
+      { path: "/", component: AppComponent },
+      { path: "/", component: NavbarComponent },
+      { path: "/site-outils", component: SiteOutilsComponent }
+
+    ]),
 
 
   ],
