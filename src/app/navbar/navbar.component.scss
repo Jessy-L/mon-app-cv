@@ -28,6 +28,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  a{
+    text-decoration: none;
+    color: black;
+
+    &:focus{
+      background-color: #FF4081;
+      color: white;
+    }
+
+  }
 }
 
 .link-btn-disable-design{
@@ -44,10 +55,7 @@
   -ms-transition: 0.1s;
   -o-transition: 0.1s;
 
-  &:focus{
-    background-color: #FF4081;
-    color: white;
-  }
+
 
 }
 

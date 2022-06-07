@@ -23,41 +23,41 @@
 
   <div class="offcanvas-body">
 
-    <button routerLink="/" class="link-btn-disable-design">
+    <a [routerLink]="['/']" class="link-btn-disable-design" data-bs-dismiss="offcanvas">
       <div class="link-custom">
         <div class="icon-link">
           <fa-icon [icon]="iconLink1"></fa-icon>
         </div>
         <div class="nomLink">Accueil</div>
       </div>
-    </button>
+    </a>
 
-    <button routerLink="/about-me" class="link-btn-disable-design">
+    <a [routerLink]="['a-propos']" class="link-btn-disable-design" data-bs-dismiss="offcanvas">
       <div class="link-custom">
         <div class="icon-link">
           <fa-icon [icon]="iconLink2"></fa-icon>
         </div>
         <div class="nomLink">À Propos</div>
       </div>
-    </button>
+    </a>
 
-    <button class="link-btn-disable-design">
+    <a [routerLink]="['mes-langages']" class="link-btn-disable-design" data-bs-dismiss="offcanvas">
       <div class="link-custom">
         <div class="icon-link">
           <fa-icon [icon]="iconLink3"></fa-icon>
         </div>
         <div class="nomLink">Mes langages</div>
       </div>
-    </button>
+    </a>
 
-    <button routerLink="/site-outils" class="link-btn-disable-design">
+    <a [routerLink]="['site-outils']" class="link-btn-disable-design" data-bs-dismiss="offcanvas">
       <div class="link-custom">
         <div class="icon-link">
           <fa-icon [icon]="iconLink4"></fa-icon>
         </div>
-        <div class="nomLink">mes sites outils</div>
+        <div class="nomLink">Mes sites outils</div>
       </div>
-    </button>
+    </a>
 
     <div class="social-network">
 

@@ -14,8 +14,11 @@ import { MatIconModule } from '@angular/material/icon';
 // FONT-AWESOME
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
-import { RouterModule } from '@angular/router';
 import { SiteOutilsComponent } from './site-outils/site-outils.component';
+import { ROUTING } from './app.routing';
+import { AProposComponent } from './a-propos/a-propos.component';
+import { AccueilComponent } from './accueil/accueil.component';
+import { MesLangagesComponent } from './mes-langages/mes-langages.component';
 
 
 
@@ -23,7 +26,10 @@ import { SiteOutilsComponent } from './site-outils/site-outils.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    SiteOutilsComponent
+    SiteOutilsComponent,
+    AProposComponent,
+    AccueilComponent,
+    MesLangagesComponent
   ],
   imports: [
     BrowserModule,
@@ -37,13 +43,7 @@ import { SiteOutilsComponent } from './site-outils/site-outils.component';
     MatIconModule,
 
     // ROUTE NAVIGATION
-    RouterModule.forRoot([
-
-      { path: "/", component: AppComponent },
-      { path: "/", component: NavbarComponent },
-      { path: "/site-outils", component: SiteOutilsComponent }
-
-    ]),
+    ROUTING
 
 
   ],
