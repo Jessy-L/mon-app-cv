@@ -22,6 +22,14 @@
   font-weight: lighter;
 }
 
+
+.offcanvas-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .link-btn-disable-design{
   background-color: transparent;
   border: 0;
