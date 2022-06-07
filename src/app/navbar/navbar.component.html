@@ -1,0 +1,80 @@
+
+<!--TOOLBAR-->
+
+<div>
+  <mat-toolbar color="primary">
+    <button class="btn btn-outline-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      <fa-icon [icon]="toolbarIcon"></fa-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <span>{{ pageToolbar }}</span>
+  </mat-toolbar>
+</div>
+
+<!--SIDEBAR -->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">{{ appName }}</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="offcanvas-body">
+
+    <button class="link-btn-disable-design">
+      <div class="link-custom">
+        <div class="icon-link">
+          <fa-icon [icon]="iconLink1"></fa-icon>
+        </div>
+        <div class="nomLink">Accueil</div>
+      </div>
+    </button>
+
+    <button class="link-btn-disable-design">
+      <div class="link-custom">
+        <div class="icon-link">
+          <fa-icon [icon]="iconLink2"></fa-icon>
+        </div>
+        <div class="nomLink">À Propos</div>
+      </div>
+    </button>
+
+    <button class="link-btn-disable-design">
+      <div class="link-custom">
+        <div class="icon-link">
+          <fa-icon [icon]="iconLink3"></fa-icon>
+        </div>
+        <div class="nomLink">Mes langages</div>
+      </div>
+    </button>
+
+    <button class="link-btn-disable-design">
+      <div class="link-custom">
+        <div class="icon-link">
+          <fa-icon [icon]="iconLink4"></fa-icon>
+        </div>
+        <div class="nomLink">mes sites outils</div>
+      </div>
+    </button>
+
+    <div class="social-network">
+
+      <a [href]="hrefImg1">
+        <img [src]="srcSN1" [alt]="altImg1">
+      </a>
+
+      <a [href]="hrefImg2">
+        <img [src]="srcSN2" [alt]="altImg2">
+      </a>
+
+      <a [href]="hrefImg3">
+        <img [src]="srcSN3" [alt]="altImg3">
+      </a>
+
+    </div>
+
+  </div>
+
+</div>

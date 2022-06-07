@@ -1,0 +1,56 @@
+.example-spacer {
+  margin-left: 10px;
+}
+
+.spacer{
+  height: 150px;
+  width: 100%;
+}
+
+.link-custom{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+.nomLink{
+  margin-left: 10px;
+}
+
+.icon-link{
+  width: 30px;
+  font-weight: lighter;
+}
+
+.link-btn-disable-design{
+  background-color: transparent;
+  border: 0;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  border-bottom: 1px solid #C4C4C4;
+
+  transition: 0.1s;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -ms-transition: 0.1s;
+  -o-transition: 0.1s;
+
+  &:focus{
+    background-color: #FF4081;
+    color: white;
+  }
+
+}
+
+.social-network{
+
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    margin: 5px;
+  }
+}
