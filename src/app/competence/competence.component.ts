@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+
+
 import * as data from "../../assets/data/competence.json";
 
 
@@ -12,8 +15,9 @@ export class CompetenceComponent implements OnInit {
 
   id: any | null;
 
-  constructor( private route: ActivatedRoute) {
+  faArrowLeft = faArrowLeft
 
+  constructor( private route: ActivatedRoute) {
 
     this.id = this.route.snapshot.paramMap.get('id')
   }
@@ -33,13 +37,13 @@ export class CompetenceComponent implements OnInit {
         let div = document.createElement('div')
         div.innerHTML = `
 
-          <div class="image-logo img-fluid text-center m-5">
+          <div class="image-logo img-fluid text-center">
             <img src="${imgLink}" alt="">
           </div>
 
           <div>
             <div class="fs-2 fw-semibold text-center p-3">${competence.name}</div>
-            <div class="fw-light text-justify p-4">${competence.description}</div>
+            <div class="fw-light text-justify p-5">${competence.description}</div>
           </div>
 
         `
