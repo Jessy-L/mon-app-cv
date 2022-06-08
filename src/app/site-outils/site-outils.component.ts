@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, ElementRef, OnInit } from '@angular/core';
 import * as data from "../../assets/data/site-outils.json";
 
 @Component({
@@ -12,7 +11,25 @@ export class SiteOutilsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(data)
+
+    Object.values(data).forEach(site => {
+
+      let contentCard = document.getElementById('cardContent') as HTMLElement;
+      let div = document.createElement('div')
+
+      div.innerHTML = `
+
+        <p>${site[0]}</p>
+        <p>${site[1]}</p>
+        <p>${site[2]}</p>
+        <p>${site[3]}</p>
+        
+      `
+      contentCard.appendChild(div)
+      
+    })
+
   }
 
 }
+

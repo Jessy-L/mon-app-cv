@@ -9,6 +9,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule} from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from '@angular/material/divider'
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+
 
 
 // FONT-AWESOME
@@ -41,6 +48,12 @@ import { MesLangagesComponent } from './mes-langages/mes-langages.component';
     MatSliderModule,
     MatToolbarModule,
     MatIconModule,
+    MatButtonModule,
+    MatCardModule,
+    MatProgressBarModule,
+    MatDividerModule,
+    MatSidenavModule,
+    
 
     // ROUTE NAVIGATION
     ROUTING
