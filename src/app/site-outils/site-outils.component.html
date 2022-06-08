@@ -1,3 +1,15 @@
-<div #cardContent id="cardContent" >
-  je suis le site 
+
+<div class="mt-3 d-flex gap-2 justify-content-center">
+
+  <button class="btn btn-secondary rounded-pill btn-filtre" #btnFiltreAll (click)="filtre(btnFiltreAll)" data-projet="all" >Tout</button>
+  <button class="btn btn-secondary rounded-pill btn-filtre" #btnFiltreProjet (click)="filtre(btnFiltreProjet)" data-projet="projet" >Projet</button>
+  <button class="btn btn-secondary rounded-pill btn-filtre" #btnFiltreGit (click)="filtre(btnFiltreGit)" data-projet="git" >GIT</button>
+  <button class="btn btn-secondary rounded-pill btn-filtre" #btnFiltreDesign (click)="filtre(btnFiltreDesign)" data-projet="design" >Design</button>
+  <button class="btn btn-secondary rounded-pill btn-filtre" #btnFiltreCode (click)="filtre(btnFiltreCode)" data-projet="code" >Code</button>
+  <!--
+  <button class="btn btn-custom-color rounded-pill btn-filtre" #btnFiltreColor (click)="filtre(btnFiltreColor)" data-projet="color" >Color</button>
+  -->
+
 </div>
+
+<div #cardContent id="cardContent"></div>

@@ -7,3 +7,18 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn-custom-color{
+  background-color: #FF4081;
+  color: white;
+
+}
+
+.box-shadows-custom{
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(63,81,181,0.24);
+  box-shadow: 0px 3px 10px 0px rgba(63,81,181,0.24);
+}
+
+.text-justify{
+  text-align: justify;
+}

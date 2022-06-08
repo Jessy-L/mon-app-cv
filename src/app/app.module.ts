@@ -26,6 +26,8 @@ import { ROUTING } from './app.routing';
 import { AProposComponent } from './a-propos/a-propos.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { MesLangagesComponent } from './mes-langages/mes-langages.component';
+import { MesCompetencesComponent } from './mes-competences/mes-competences.component';
+import { CompetenceComponent } from './competence/competence.component';
 
 
 
@@ -36,7 +38,9 @@ import { MesLangagesComponent } from './mes-langages/mes-langages.component';
     SiteOutilsComponent,
     AProposComponent,
     AccueilComponent,
-    MesLangagesComponent
+    MesLangagesComponent,
+    MesCompetencesComponent,
+    CompetenceComponent
   ],
   imports: [
     BrowserModule,
