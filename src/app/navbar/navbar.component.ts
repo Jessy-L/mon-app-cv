@@ -10,7 +10,7 @@ import { faBars, faCode, faHouse, faQuestion, faWrench } from '@fortawesome/free
 })
 export class NavbarComponent implements OnInit {
 
-  pageToolbar = "Page Accueil";
+  pageToolbar = "Jessy Landas";
   appName = "Jessy Landas"
 
   toolbarIcon = faBars
